@@ -32,7 +32,7 @@ authors:
     web: https://onur.im/
     twitter: oasln
     github: onur 
-  command:
+  Command:
     name: Command
     display_name: Command
   kandalf:
