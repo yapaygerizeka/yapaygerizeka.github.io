@@ -1,12 +1,12 @@
 ---
-title: Arch Linux
+title: Python sizin tek dostunuz
 layout: post
 comments: false
 ---
 
 ```python
-Word = "Hello World"
-print Word
+hi = "Hello Hacker !"
+print hi
 ```
 
 
