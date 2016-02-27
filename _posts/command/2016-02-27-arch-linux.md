@@ -4,7 +4,6 @@ layout: post
 comments: false
 ---
 
-# Konuşan cüce
 Meraba 
 cüceyim ben 
 konuşan 
