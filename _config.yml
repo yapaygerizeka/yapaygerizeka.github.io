@@ -41,4 +41,20 @@ authors:
     email: furkan.kalkan3@gmail.com
     web: http://furkankalkan.com
     twitter: furkan_kalkan1
+<<<<<<< HEAD
+    github: geekdinazor
+  ob1mod:
+    name : ob1mod
+    display_name : Samet Sazak
+    email: smtszk@gmail.com
+    twitter: @ob1mod 
+=======
     github: geekdinazor 
+  Mertcan:
+    name: Mertcan
+    display_name: Mertcan
+    email: admin@mertcangokgoz.com
+    web: https://mertcangokgoz.com/
+    twitter: 0x2e88ce4
+    github: MertcanGokgoz 
+>>>>>>> 723f128aa22a28d4a59edb86fcef7d7ae27b6216
