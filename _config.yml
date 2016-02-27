@@ -35,3 +35,10 @@ authors:
   command:
     name: command
     display_name: command
+  kandalf:
+    name: kandalf
+    display_name: Furkan Kalkan
+    email: furkan.kalkan3@gmail.com
+    web: http://furkankalkan.com
+    twitter: furkan_kalkan1
+    github: geekdinazor 
