@@ -4,8 +4,9 @@ layout: post
 comments: false
 ---
 
-'''python
+```python
 Word = "Hello World"
 print Word
-'''
+```
+
 
