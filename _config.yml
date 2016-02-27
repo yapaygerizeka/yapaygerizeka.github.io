@@ -33,8 +33,8 @@ authors:
     twitter: oasln
     github: onur 
   command:
-    name: command
-    display_name: command
+    name: Command
+    display_name: Command
   kandalf:
     name: kandalf
     display_name: Furkan Kalkan
