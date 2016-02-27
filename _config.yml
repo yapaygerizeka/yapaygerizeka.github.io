@@ -1,0 +1,37 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            YGZ
+tagline:          'Yapay Geri Zekâ'
+description:      'Yapay Geri Zekâ'
+url:              https://yapaygerizeka.github.io
+baseurl:          /
+
+paginate:         10
+
+# Custom vars
+gems:             [jekyll-paginate]
+
+kramdown:
+  input:          GFM
+
+github:
+  repo:           https://github.com/yapaygerizeka/yapaygerizeka.github.io.git
+
+# Yazarlar
+authors:
+  onur:
+    name: onur
+    display_name: Onur Aslan
+    email: onur@onur.im
+    web: https://onur.im/
+    twitter: oasln
+    github: onur 
+  command:
+    name: command
+    display_name: command

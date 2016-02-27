@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+{% assign author = site.authors[page.author] %}
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }}{% if author %} by {{ author.display_name }}{% endif %}</span>
+  {{ content }}
+</div>
+
+
+{% if author %}
+<div class="related">
+  <h2>{{ author.display_name }} tarafından son yazılar</h2>
+  <ul class="related-posts">
+    {% assign count = 0 %}
+    {% for post in site.posts limit:3 %}
+      {% if post.author == author.name && count < 5 %}
+        <li>
+          <h3>
+            <a href="{{ post.url }}">
+              {{ post.title }}
+              <small>{{ post.date | date_to_string }}</small>
+            </a>
+          </h3>
+        </li>
+      {% capture count %}{{ count | plus: 1 }}{% endcapture %}
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if page.comments != false %}
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+  this.page.url = "{{ site.url }}";
+  this.page.identifier = "{{ page.url }}";
+};
+(function() {
+var d = document, s = d.createElement('script');
+
+s.src = '//yapaygerizeka.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the
+<a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+{% endif %}
