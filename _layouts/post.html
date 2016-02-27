@@ -15,7 +15,7 @@ layout: default
   <h2>{{ author.display_name }} tarafından son yazılar</h2>
   <ul class="related-posts">
     {% assign count = 0 %}
-    {% for post in site.posts limit:3 %}
+    {% for post in site.posts %}
       {% if post.author == author.name && count < 5 %}
         <li>
           <h3>
