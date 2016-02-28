@@ -16,7 +16,7 @@ layout: default
   <ul class="related-posts">
     {% assign count = 0 %}
     {% for post in site.posts %}
-      {% if post.author == author.name && count < 5 %}
+      {% if post.author == author.name and post.url != page.url and count < 5 %}
         <li>
           <h3>
             <a href="{{ post.url }}">
