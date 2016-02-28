@@ -250,3 +250,12 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+.author-link {
+    color: #313131;
+    font-size: 0.75rem;
+}
+
+.author-link:hover {
+    color: #268bd2;
+}
