@@ -5,6 +5,16 @@ title: Yazarlar
 
 <div class="posts">
 {% for author in site.authors %}
+  {% comment %}
+    Sadece postu olan yazarlar gosteriliyor
+  {% endcomment %}
+  {% assign have_posts = false %}
+  {% for post in site.posts %}
+    {% if post.author == author[1].name %}
+      {% assign have_posts = true %}
+    {% endif %}
+  {% endfor %}
+  {% if have_posts %}
   <a name="{{ author[1].name }}"></a>
   <h3>
     {{ author[1].display_name }}
@@ -15,13 +25,12 @@ title: Yazarlar
     </sup>
   </h3>
   <ol>
-
     {% for post in site.posts %}
     {% if post.author == author[1].name %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}
     {% endfor %}
-
   </ol>
+  {% endif %}
 {% endfor %}
 </div>
