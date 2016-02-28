@@ -36,7 +36,7 @@ authors:
   Command:
     name: Command
     display_name: Command
-    twitter: 0x7000
+    twitter: "0x7000"
     github: "0x7000"
   kandalf:
     name: kandalf
