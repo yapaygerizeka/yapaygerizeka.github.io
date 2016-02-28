@@ -36,6 +36,8 @@ authors:
   Command:
     name: Command
     display_name: Command
+    twitter: https://twitter.com/0x7000
+    github: 0x7000
   kandalf:
     name: kandalf
     display_name: Furkan Kalkan
