@@ -19,6 +19,7 @@ gems:             [jekyll-paginate]
 
 kramdown:
   input:          GFM
+  hard_wrap:      false
 
 github:
   repo:           https://github.com/yapaygerizeka/yapaygerizeka.github.io.git
