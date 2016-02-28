@@ -1,7 +1,7 @@
 ---
 title: Debian kurarken karşılaştığım bazı sorunlar ve çözümü
 layout: post
-comments: false
+author: kandalf
 ---
 
 Eski kurulumumun birçok gereksiz paket ve dosyayla dolmasının üzerine yedeklerimi alıp sıfırdan kurulum yapmayı planlıyordum çoktandır. Nihayet bugün Xubuntu'yu silip Debian kurmaya karar verdim. Öncelikle kampüste internet yeterince iyi olduğu için netinstall kalıbını indirip elimdeki SD karta yazdırdım. Normal cd ya da dvd kalıplarının yerine netinstall seçmemin nedeni boyutunun diğerlerine göre daha küçük olması ve aynı işlevi görmesi oldu. SD kart sorunsuzca boot ettikten sonra grafiksel kurulumu seçip ilerledim. Bu arada grafiksel kurulumun son derece stabil ve  hoş tasarlandığını söylemeden edemeyeceğim.
