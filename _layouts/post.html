@@ -25,8 +25,8 @@ layout: default
             </a>
           </h3>
         </li>
-      {% capture count %}{{ count | plus: 1 }}{% endcapture %}
-    {% endif %}
+      {% assign count=count | plus: 1 %}
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
