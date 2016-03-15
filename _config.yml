@@ -12,7 +12,7 @@ description:      'Yapay Geri Zekâ'
 url:              https://yapaygerizeka.github.io
 baseurl:          /
 
-paginate:         10
+paginate:         50
 
 # Custom vars
 gems:             [jekyll-paginate]
