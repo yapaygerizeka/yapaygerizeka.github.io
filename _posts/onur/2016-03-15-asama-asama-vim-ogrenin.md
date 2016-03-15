@@ -3,7 +3,7 @@ title: Aşama Aşama Vim Öğrenin
 date: Tue, 15 Mar 2016 18:26:36 +0200
 layout: post
 author: onur
-comments: false
+comments: true
 ---
 
 *En hızlı şekilde Vim (insanoğlu tarafından bilinen en iyi editör) öğrenmek
