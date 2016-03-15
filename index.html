@@ -3,26 +3,21 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  {% assign author = site.authors[post.author] %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<ul class="related-posts">
+{% for post in paginator.posts %}
+{% assign author = site.authors[post.author] %}
+<li>
+  <h3>
+    <a href="{{ post.url }}">
+      <small>{{ post.date | date_to_string }} &mdash;</small>
+      {{ post.title }}
+      {% if author %}<small>&mdash; {{ author.display_name }}</small>{% endif %}
+    </a>
+  </h3>
+</li>
 
-    <span class="post-date">{{ post.date | date_to_string }}{% if author %} by <a href="/yazarlar/#{{ author.name }}">{{ author.display_name }}</a>{% endif %}</span>
-
-    {% if post.content contains '<!--more-->' %}
-      {{ post.content | split:'<!--more-->' | first }}
-    {% else %}
-      {{ post.content | truncatewords:50 | strip_html }}
-    {% endif %}
-  </div>
-  {% endfor %}
-</div>
+{% endfor %}
+</ul>
 
 <div class="pagination">
   {% if paginator.next_page %}
