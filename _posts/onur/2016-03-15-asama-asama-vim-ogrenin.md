@@ -266,7 +266,7 @@ Diyelim imleç `(map (+) ("foo"))` içerisinde yer alan ilk `o` üzerinde:
 
 #### 4.3 Dörtgen blokların seçimi: `<C-v>`
 
-Dörtgen bloklar bir çok satırı yorum haline getirirken çok kullanışlıdır.
+Dörtgen bloklar birçok satırı yorum haline getirirken çok kullanışlıdır.
 Örneğin: `0<C-v><C-d>I-- [ESC]`
 
 * `^` → Satırda ki ilk boş olmayan karaktere git.
@@ -355,7 +355,7 @@ ki Vim çok iyi araçlar ve mükemmel bir dökümantasyon ile gelmekte. Temel
 komutlara hakim olduktan sonra vimtutor'u çalıştırın. Ayrıca şu sayfayı
 dikkatlice okumalısınız: `:help usr_02.txt`.
 
-Ardıdan; `!`, katlamalar, işaretciler, eklentiler ve daha bir çok özelliği
+Ardıdan; `!`, katlamalar, işaretciler, eklentiler ve daha birçok özelliği
 ögreneceksiniz. Vim'i piyano çalmayı öğrenir gibi öğrenirseniz hiç bir
 sorun olmaz.
 
