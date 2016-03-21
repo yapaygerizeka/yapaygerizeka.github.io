@@ -1,5 +1,5 @@
 ---
-title: Python sizin tek dostunuz
+title: "Python sizin tek dostunuz"
 layout: post
 comments: false
 author: Command
