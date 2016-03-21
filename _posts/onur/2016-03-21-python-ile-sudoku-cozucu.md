@@ -5,7 +5,7 @@ author: onur
 date: Mon, 21 Mar 2016 17:48:16 +0200
 ---
 
-Brute force ile sudoku çözen python ile yazılmış bir sudoku çözücü.
+Brute force ile sudoku çözen bir python uygulaması.
 
 
 ```python
