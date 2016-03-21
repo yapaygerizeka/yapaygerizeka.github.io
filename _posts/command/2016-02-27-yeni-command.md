@@ -6,35 +6,41 @@ author: Command
 ---
 
 ```python
-def hava(sehir):
-	sehir = sehir.replace("ı","i").replace("ş","s")\
-	.replace("ç","c").replace("ö","o").replace("ğ","g").replace("ü","u")
-	try:
-		response = urllib2.urlopen('http://www.mynet.com/havadurumu/asya/turkiye/%s' % sehir,timeout = 20)
-		strtext = response.read().decode("utf-8")
-		response.close()
-		#<span class="hvDay">Pazar</span> = gün
-		#<span class="hvMood">Kar Yağışlı</span> = durum
-		#<span class="hvDeg1">-10°C</span> = deger
-		ey = re.compile('(<span class="hvDeg1">.+<\/span>)')
-		ed = re.compile('(<span class="hvDeg2">.+<\/span>)')
-		dr = re.compile('(<span class="hvMood">.+<\/span>)')
-		yuk = re.findall(ey, strtext)
-		dsk = re.findall(ed, strtext)
-		durum = re.findall(dr, strtext)
-		if durum[0]:
-			print "hava durumu: ok"
-			return sehir.capitalize()+": "+htmlpars_native(durum[0])+\
-			" ( En Yüksek:"+htmlpars_native(yuk[0])+", En düşük:"+htmlpars_native(dsk[0])+" )"
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+
+import subprocess,re,time,os,random
+
+def main():
+	while 1:
+		time.sleep(10)
+		tarih = time.strftime("[%Y.%m.%d]-[%H:%M]")
+		ret = check_prc()
+		ret = ret.splitlines()
+		proc = ret[0]
+		if re.search("atsky.py",proc):
+			print colorsw()+tarih+colorsw()+" Program Çalışıyor..."+colorsw()+"  %s" %(proc)
 		else:
-			print colorsw()+"hava durumu null: %s" %(sehir)
-			return "null"
-	except urllib2.HTTPError as e:
-		print "Hava Durumu: %s" %e
-		return "null"
-	except Exception as e:
-		print "Hava Durumu: "+str(e)
-		return "null"
+			print colorsw()+"Program başlatılıyor..."
+			run_proc()
+	return 0
+
+def check_prc():
+	cmd = "ps u | grep atsky"
+	bash_out = subprocess.check_output(cmd,stderr=subprocess.STDOUT,shell=True)
+	return bash_out
+
+def run_proc():
+	cmd = "python2 ./atsky.py ygz > /dev/null &"
+	os.system(cmd)
+
+def colorsw():
+	cp = ["\33[0;91m","\33[0;92m","\33[0;93m","\33[0;94m","\33[0;95m","\33[0;96m","\33[0;97m"]
+	return random.choice(cp)
+
+if __name__ == '__main__':
+	main()
+
 ```
 
 
