@@ -19,8 +19,9 @@ consoletranslation="8859-9_to_uni"
 ```
 
 dosyayı kaydettikten sonra 
+
 ```
-cd /etc/init.d/
+cd /etc/init.d/ &
 ./consolefont restart
 ```
 
