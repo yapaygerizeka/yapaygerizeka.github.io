@@ -428,3 +428,31 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+
+/* share colors */
+div.share h4 {
+    margin: 0 0 4px 0;
+    padding: 0;
+}
+
+div.share a {
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    width: 45px;
+}
+
+div.share a.share-twitter {
+    background-color: #4099FF;
+}
+
+div.share a.share-facebook {
+    background-color: #3D62B3;
+}
+
+div.share a.share-google {
+    background-color: #D34836;
+}
