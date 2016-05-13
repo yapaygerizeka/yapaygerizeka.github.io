@@ -12,7 +12,7 @@ layout: default
 
 <div class="related share">
   <h4>Paylaş</h4>
-  <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=0x2e88ce4&related=0x2e88ce4" class="share-twitter"><i class="fa fa-twitter fa"></i></a>
+  <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url }}{{ page.url }}" class="share-twitter"><i class="fa fa-twitter fa"></i></a>
   <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="share-facebook"><i class="fa fa-facebook fa"></i></a>
   <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" class="share-google"><i class="fa fa-google-plus fa share-button"></i></a>
 </div>
